@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up</title>
+</head>
+<body>
+   <div class="image-container">
+    <img src="images/train.jpg" alt="martin-sanchez-train-unsplash" class="train-img">
+    <img src="images/odin-lined.png" alt="odin image" class="odin-img">
+    <p class="odin-header">ODIN</p>
+    <div class="image-container-footer">
+        <p id="reference-text">Image by 
+        <a href="https://unsplash.com/@zekedrone" class="reference">Martin Sanchez</a>
+        on
+        <a href="https://unsplash.com/photos/yellow-train-on-rail-tracks-during-daytime-pfkzBUh4KyA" class="reference">Unsplash</a>
+        </p>
+    </div> 
+   </div>
+   <div class="submission-form">
+    <div class="text-container">
+        <p class="begin-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p class="begin-text">Sign up <em>now</em> to get started.</p>
+        <p class="begin-text">You <em>know</em> you want to.</p>
+    </div>
+    <form action="index.html" id="form-container" method="post">
+        <h1 class="form-text">Let's do this!</h1>
+        <div class="input-container">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first_name" id="first-name" placeholder="Thor" required minlength="3" maxlength="10">
+            <span class="error">This field is required</span>
+        </div>
+        <div class="input-container">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last_name" id="last-name" placeholder="Odinson" required minlength="3" maxlength="10">
+            <span class="error">This field is required</span>
+        </div>
+        <div class="input-container">
+           <label for="email">Email</label>
+           <input type="email" name="email_" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
+            <span class="error">This field is required</span>
+        </div>
+        <div class="input-container">
+           <label for="phone-number">Phone Number</label>
+           <input type="tel" name="phone_number" id="phone-number" placeholder="000-000-0000" pattern="/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/" required>
+           <span class="error">This field is required</span>
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="pass_word" id="password" minlength="8" maxlength="20" required>
+            <span class="error">This field is required</span>
+        </div>
+        <div class="input-container">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm-password" minlength="8" maxlength="20" required>
+            <span class="error">This field is required</span>
+        </div>
+    <div class="submission-container">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
